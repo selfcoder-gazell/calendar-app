@@ -328,4 +328,4 @@ function newEventJson(description, month, year, day){
         "day": day
      };
      eventData.events.push(event);
- }
+ } 
