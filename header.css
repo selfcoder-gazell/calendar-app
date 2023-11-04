@@ -1,0 +1,63 @@
+/* header */
+.app-header-title {
+    font-family: "Young Serif", serif;
+  }
+  .add-topic-expanded {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    transition: max-height 0.5s;
+    z-index: 2;
+    position: relative;
+    background-color: var(--white-app);
+    border-radius: 25px;
+  }
+  
+  .add-topic-expanded-open {
+    min-height: 100px;
+    max-height: 100rem;
+    border: 0.1rem solid var(--blue-app);
+  }
+  
+  .topic-input {
+    margin: 10px 10px 0 10px;
+    height: 2rem;
+    text-align: left;
+    border-radius: 50px;
+    background-color: var(--blue-app);
+    color: var(--white-app);
+    padding: 0.5em;
+  }
+  
+  .content-input {
+    margin: 10px;
+    min-height: 1.5em;
+    height: 20em;
+    text-align: left;
+    font-size: larger;
+    border-radius: 20px;
+    color: var(--white-app);
+    background-color: var(--blue-app);
+    padding: 0.5em;
+  }
+  .add-button {
+    color: var(--blue-app);
+    background-color: var(--orange-app);
+    width: 3rem;
+    border-radius: 50px;
+    margin: 0 auto 5px auto;
+    padding-top: 0.3rem;
+  }
+  .app-header {
+    background-color: var(--orange-app);
+    /* height: 2.5em; */
+    color: var(--blue-app);
+    margin-bottom: 1em;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 1px;
+    width: 100%;
+    height: 4rem;
+    border: 0.1rem solid var(--blue-app);
+  }
