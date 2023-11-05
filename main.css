@@ -307,6 +307,7 @@ table {
 
 .new-event-form legend{
     font-size: 30px;
+    font-family: "Young Serif", serif;
 }
 
 #new-event-desc{
@@ -333,7 +334,7 @@ table {
     transition: all .2s ease-in;
     color:gray;
     box-shadow: 5px 8px 14px #393a39;
-    background-color: #dbd5a4;
+    background-color: var(--white-app);
     width:60%;
     align-self:center;
     padding:14px;
@@ -345,18 +346,13 @@ table {
     transform: scale(1.2);
 }
 /****** Events ********/
-:root {
-    --white-app: #eef0f2;
-    --blue-app: #403f4c;
-    --orange-app: #fca311;
-  }
 .event-container{
-    background: linear-gradient(to bottom left, #f2fcef, #eff7f1);
+    background-color: var(--white-app);
     border-left:none;
     display: flex;
     width:433px;
     height: 425px;
-    border: 0.5px solid var(--blue-app);
+    border: 0.1px solid var(--blue-app);
     overflow:hidden;
     overflow-y: auto
 }
@@ -436,7 +432,7 @@ table {
     transition: all .2s ease-in;
     color: var(--blue-app);
     box-shadow: 5px 8px 14px #393a39;
-    background-color: #dbd5a4;
+    background-color: var(--orange-app);
     outline:none;
     cursor:pointer;
   }
