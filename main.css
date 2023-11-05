@@ -348,13 +348,13 @@ table {
 /****** Events ********/
 .event-container{
     background-color: var(--white-app);
-    border-left:none;
     display: flex;
     width:433px;
     height: 425px;
     border: 0.1px solid var(--blue-app);
+    border-radius: 15px;
     overflow:hidden;
-    overflow-y: auto
+    overflow-y: auto;
 }
 
 .events{
