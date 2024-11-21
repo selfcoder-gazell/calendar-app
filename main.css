@@ -1,7 +1,7 @@
 :root {
     --white-app: #eef0f2;
     --blue-app: #403f4c;
-    --orange-app: #fca311;
+    /* --orange-app: #fca311; */
     --bAblue-app: #0f20f4;
   }
 
@@ -192,15 +192,15 @@ table {
 }
 
 .calendar-days td:hover {
-    background: #dd9756;
+    background: var(--bAblue-app);
 }
 .weekend {
-    color: var(--orange-app);
+    color: var(--bAblue-app);
 }
 
-.calendar-days .weekend {
+/* .calendar-days .weekend {
     color: var(--orange-app);
-}
+} */
 
 /***** Container- calendar- Events ******/
 .container {
@@ -336,7 +336,7 @@ table {
     -webkit-transition: all .2s ease-in;
     transition: all .2s ease-in;
     color:gray;
-    box-shadow: 5px 8px 14px #393a39;
+    box-shadow: 5px 8px 14px var(--bAblue-app);
     background-color: var(--white-app);
     width:60%;
     align-self:center;
@@ -354,7 +354,7 @@ table {
     display: flex;
     width:433px;
     height: 425px;
-    border: 0.1px solid var(--blue-app);
+    border: 0.1px solid var(--bAblue-app);
     border-radius: 15px;
     overflow:hidden;
     overflow-y: auto;
