@@ -122,7 +122,8 @@ function daysInMonth (month, year) {
 
 // Events
 
-//https://stackoverflow.com/questions/34896106/attach-event-to-dynamic-elements-in-javascript Event Delegation for new elements
+//https://stackoverflow.com/questions/34896106/attach-event-to-dynamic-elements-in-javascript 
+//Event Delegation for new elements
 document.addEventListener('click',function(e){
     if(!e.target.classList.contains('active') && e.target.classList.contains('day')){
         if(document.getElementsByClassName('active')[0] === undefined){

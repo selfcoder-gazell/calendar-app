@@ -12,7 +12,7 @@
     </head>
     <body>
         <header class="app-header">
-            <h1 class="app-header-title">Memory Echo</h1>
+            <h1 class="app-header-title">Parent's Helpers</h1>
         </header>
         <section class="search-add-section">
             <div class="searchbar-container">
@@ -41,13 +41,13 @@
                 <table class="days-body">
                     <thead>
                         <tr class="days-row">
-                            <th>Mon</th>
-                            <th>Tue</th>
-                            <th>Wed</th>
-                            <th>Thu</th>
-                            <th>Fri</th>
-                            <th class="weekend">Sat</th>
-                            <th class="weekend">Sun</th>
+                            <th scope="col">Mon</th>
+                            <th scope="col">Tue</th>
+                            <th scope="col">Wed</th>
+                            <th scope="col">Thu</th>
+                            <th scope="col">Fri</th>
+                            <th scope="col" class="weekend">Sat</th>
+                            <th scope="col" class="weekend">Sun</th>
                         </tr>
                     </thead>
                     <tbody class="calendar-days"></tbody>
@@ -58,14 +58,14 @@
                         <option value="0">Jan</option>
                         <option value="1">Feb</option>
                         <option value="2">Mar</option>
-                        <option value=3>Apr</option>
-                        <option value=4>May</option>
-                        <option value=5>Jun</option>
-                        <option value=6>Jul</option>
-                        <option value=7>Aug</option>
-                        <option value=8>Sep</option>
-                        <option value=9>Oct</option>
-                        <option value=10>Nov</option>
+                        <option value="3">Apr</option>
+                        <option value="4">May</option>
+                        <option value="5">Jun</option>
+                        <option value="6">Jul</option>
+                        <option value="7">Aug</option>
+                        <option value="8">Sep</option>
+                        <option value="9">Oct</option>
+                        <option value="10">Nov</option>
                         <option value="11">Dec</option>
                     </select>
                     <input type="number" min="1" id="year">
@@ -74,24 +74,24 @@
             <div class="event-container">
                 <div class="events visible">
                     <span class="no-Events event-message">There are no events today</span>
-                    <button class="show-event-form rotate">Add new event</button>
+                    <button type="submit" class="show-event-form rotate">Add new event</button>
                 </div>
                 <form class="new-event-form hidden">
                     <legend>Submit New Event</legend>
                     <input id="new-event-desc" type="text" name="desc" placeholder="desc">
-                    <input type="submit" class="submit-event rotate" value="submit">
+                    <input type="text"  class="submit-event rotate" value="submit">
                 </form>
             </div>
         </div>
         <footer>
-            <div class="navigation-footer">
+            <!-- <div class="navigation-footer">
               <a class="navItem" href="#"><i class="fa fa-fw fa-home"></i></a>
               <a class="navItem active" href="#"><i class="fa fa-fw fa-calendar"></i></a>
               <a class="navItem" href="#"><i class="fa fa-fw fa-user"></i></a>
               <div class="identifier-background"></div>
-            </div>
+            </div> -->
           </footer>
-        <script type="text/javascript" src="calendar.js" async></script>
+        <script src="calendar.js" async></script>
         </section>
     </body>
 </html>
