@@ -2,6 +2,7 @@
     --white-app: #eef0f2;
     --blue-app: #403f4c;
     --orange-app: #fca311;
+    --bAblue-app: #0f20f4;
   }
 
   body {
@@ -87,7 +88,7 @@ table {
   .add-topic-expanded-open {
     min-height: 100px;
     max-height: 100rem;
-    border: 0.1rem solid var(--blue-app);
+    border: 0.1rem solid var(--bAblue-app);
   }
   
   .topic-input {
@@ -95,7 +96,7 @@ table {
     height: 2rem;
     text-align: left;
     border-radius: 50px;
-    background-color: var(--blue-app);
+    background-color: var(--bAblue-app);
     color: var(--white-app);
     padding: 0.5em;
   }
@@ -113,14 +114,14 @@ table {
   }
   .add-button {
     color: var(--blue-app);
-    background-color: var(--orange-app);
+    background-color: var(--bAblue-app);
     width: 3rem;
     border-radius: 50px;
     margin: 0 auto 5px auto;
     padding-top: 0.3rem;
   }
   .app-header {
-    background-color: var(--orange-app);
+    background-color: var(--bAblue-app);
     /* height: 2.5em; */
     color: var(--blue-app);
     margin-bottom: 1em;
@@ -204,7 +205,7 @@ table {
 /***** Container- calendar- Events ******/
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 40px auto;
     padding: 20px;
     align-items: stretch;
@@ -226,7 +227,7 @@ table {
     font-size: large;
   }
   .app-header {
-    background-color: var(--orange-app);
+    background-color: var(--bAblue-app);
     /* height: 2.5em; */
     color: var(--blue-app);
     margin-bottom: 1em;
@@ -237,7 +238,7 @@ table {
     border: 0.1rem solid var(--blue-app);
   }
 .date-header{
-    background-color: var(--orange-app);
+    background-color: var(--bAblue-app);
     height:2em;
     border-radius: 10px;
     width: 100%;
@@ -265,11 +266,13 @@ table {
     border: none;
     border-right:none;
     border-bottom: 1px;
+    border-top: 1px solid blue;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: auto;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; */
+    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
 #month {
@@ -432,7 +435,7 @@ table {
     transition: all .2s ease-in;
     color: var(--blue-app);
     box-shadow: 5px 8px 14px #393a39;
-    background-color: var(--orange-app);
+    background-color: var(--bAblue-app);
     outline:none;
     cursor:pointer;
   }
